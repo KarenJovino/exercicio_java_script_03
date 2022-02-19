@@ -105,7 +105,7 @@ Salário Liquido                 : R$  935,00 */
         let desconto_inss = 0.1*salary;
         let desconto_fgts = 0.11*salary;
         let desconto_ir = desconto(salary);
-        let total_de_descontos = desconto_inss + desconto_fgts + desconto_ir;
+        let total_de_descontos = desconto_inss + desconto_ir;
         let salario_liquido = salary - total_de_descontos;
         
         function desconto(salary) {
